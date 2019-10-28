@@ -37,7 +37,7 @@
                         </goals>
                         <configuration>
                             <inputDirectories>
-                                <include>src/main/protobuf</include>
+                                <include>../protoFiles</include>
                             </inputDirectories>
                         </configuration>
                     </execution>

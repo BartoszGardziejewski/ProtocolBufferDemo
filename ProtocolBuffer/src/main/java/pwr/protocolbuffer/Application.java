@@ -13,7 +13,7 @@ public class Application {
     }
 
     Application() {
-        final String filePath = "protobufBinary/People";
+        final String filePath = "../protobufBinary/People";
 
         PeopleMessage.People people = generateData();
 
@@ -40,6 +40,7 @@ public class Application {
                         .setFName("Bill")
                         .setLName("Gates")
                         .setAge(64)
+                        .setIsFamous(true)
                         .build();
 
         PeopleMessage.Person personSJ =
