@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+option java_package = "pwr.protocolbuffer.models";
+option java_outer_classname = "PeopleMessage";
+
+message Person {
+    required string fName = 1;
+    required string lName = 2;
+    optional int32 age = 3;
+    optional bool isFamous = 4 [default=false];
+}
+
+message People {
+    repeated Person person = 1;
+}

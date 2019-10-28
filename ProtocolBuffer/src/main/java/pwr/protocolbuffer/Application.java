@@ -72,6 +72,7 @@ public class Application {
     }
 
     private PeopleMessage.People deserializeData( String filePath) throws IOException {
-        return PeopleMessage.People.newBuilder().mergeFrom(new FileInputStream(filePath)).build();
+        FileInputStream fis = new FileInputStream(filePath);
+        return PeopleMessage.People.newBuilder().mergeFrom(fis).build();
     }
 }
